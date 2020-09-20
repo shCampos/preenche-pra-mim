@@ -6,7 +6,7 @@ for (let item of chat) {
     console.log("não achei")
   } else {
     let link = txt.innerHTML
-    if(/forms.gle/.exec(link)) {
+    if(/forms.gle/.exec(link) && /https/.exec(link)) {
     	console.log("achou")
     }
   }
